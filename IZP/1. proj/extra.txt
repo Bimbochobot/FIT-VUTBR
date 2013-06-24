@@ -1,0 +1,17 @@
+Program implementuje rozsirenie pseudografickeho zobrazenia
+pocetnosti znakov pomocou tabulky. Ta obsahuje povodne 3 
+stlpce teda ordinalnu hodnotu, samotny znak a pocetnost, ako
+aj stlpcovy diagram a percentualne vyjadrenie pocetnosti.
+
+Rozsirenie je mozne kombinovat aj s parametrom N, kedy sa vypise
+prvych N najpocetnejsich znakov, alebo samostatne, kedy sa vypise
+cela relevantna cast tabulky podla ordinalnej hodnoty.
+
+Kedze sme obmedzeny na premennu uchar_max, pri dosiahnuti
+poctu 255 sa uz dalsi vyskyt znaku nezaznamenava do pocetnosti,
+ako ani do celkoveho poctu nacitanych znakov. Tym dosiahneme, ze
+percentualne vyjadrenie bude spravne.
+
+Percenta su iba celociselneho datoveho typu, preto sa 
+zaokrhuhluju nadol a tym padom sucet vsetkych percent
+nemusi nutne davat 100.

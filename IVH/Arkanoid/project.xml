@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project fitkitversion="2.0" outputprefix="breakout">
+    <!--  Project description -->
+    <name>Hra Breakout</name>
+    <author>Ivan Ševčík</author>
+    <authoremail>xsevci50@stud.fit.vutbr.cz</authoremail>
+    <revision>20130407</revision>
+    <description> Hra na styl Arkanoid / Breakout, cielom je odrazat lopticku a znicit vsetky bloky. </description>
+
+    <!--  MCU part --> 
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga architecture="pc">
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <include>fpga/ctrls/ps2/package.xml</include>
+		<include>fpga/ctrls/keyboard/package.xml</include>
+		<file>utilities.vhd</file>
+        <file>breakout_top.vhd</file>
+    </fpga>
+</project>
