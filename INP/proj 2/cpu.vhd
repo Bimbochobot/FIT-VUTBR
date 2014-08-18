@@ -2,7 +2,7 @@
 -- Copyright (C) 2013 Brno University of Technology,
 --                    Faculty of Information Technology
 -- Author(s): Zdenek Vasicek <vasicek AT fit.vutbr.cz>
---
+--            Ivan Sevcik <xsevci50 AT fit.vutbr.cz>
 
 library ieee;
 use ieee.std_logic_1164.all;

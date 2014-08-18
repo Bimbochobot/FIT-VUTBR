@@ -1,5 +1,5 @@
 -- fsm.vhd: Finite State Machine
--- Author(s): 
+-- Author(s):  IVan Sevcik
 --
 library ieee;
 use ieee.std_logic_1164.all;
